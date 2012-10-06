@@ -35,7 +35,7 @@ class RequestRootUri implements ViewHelperInterface
      *
      * @param string $scheme
      *
-     * @return \Common\RequestRootUri
+     * @return \Groundhog\TemplateRenderer\RequestRootUri
      */
     public function setScheme($scheme)
     {
