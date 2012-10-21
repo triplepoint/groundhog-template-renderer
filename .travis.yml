@@ -1,0 +1,17 @@
+# phpcs won't pass due to a bug in the way it handles closures.  Skipping it for now.
+
+language: php
+
+php:
+  - 5.3
+  - 5.4
+
+before_script:
+    - composer install
+#    - pyrus install pear/PHP_CodeSniffer
+#    - phpenv rehash
+
+script:
+    - phpunit -c phpunit.xml --coverage-text tests/
+#    - phpcs --ignore=vendor/* --standard=PSR2 -n --encoding=UTF-8 --report=summary ./
+    

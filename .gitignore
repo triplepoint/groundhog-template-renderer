@@ -161,3 +161,14 @@ pip-log.txt
 
 # Mac crap
 .DS_Store
+
+
+
+
+
+
+# Custom Ignores
+## Ignore the Composer-managed stuff
+/composer.phar
+/composer.lock
+/vendor/
