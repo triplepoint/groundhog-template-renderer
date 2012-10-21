@@ -54,4 +54,22 @@ class TemplateRendererPhpTest extends \PHPUnit_Framework_TestCase
         $this->assertStringEqualsFile($should_render_to, $output);
     }
 
+    public function testRendererRendersWithHelper()
+    {
+        $test_file        = 'tests/Groundhog/TemplateRenderer/Tests/test_docs/helper_template.template';
+        $should_render_to = 'tests/Groundhog/TemplateRenderer/Tests/test_docs/helper_template.output';
+
+        $mock_helper = $this->getMock('\Groundhog\TemplateRenderer\ViewHelperInterface');
+        $mock_helper->expects($this->any())
+            ->method('render')
+            ->will($this->returnValue('<content>Helper provided content</content>'));
+
+        $renderer = new TemplateRendererPhp();
+        $renderer->registerHelper('mock_helper', $mock_helper);
+
+        $output = $renderer->render($test_file);
+
+        $this->assertStringEqualsFile($should_render_to, $output);
+    }
+
 }

@@ -35,5 +35,4 @@ class RequestRootUriTest extends \PHPUnit_Framework_TestCase
 
         $this->assertSame('https://www.whatever.com/', $uri);
     }
-
 }
