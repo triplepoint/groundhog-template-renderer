@@ -1,0 +1,6 @@
+Some Output
+
+<name><?= $this->data['name'] ?></name>
+
+<age><?= $this->data['age'] ?></age>
+

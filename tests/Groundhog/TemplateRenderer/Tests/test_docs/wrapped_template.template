@@ -1,0 +1,7 @@
+<wrapped_content>
+This Content will be wrapped by a wrapper parent
+
+Here's some more content to be wrapped
+<wrapped_content>
+<?php
+$this->wrap('tests/Groundhog/TemplateRenderer/Tests/test_docs/_wrapper.template');

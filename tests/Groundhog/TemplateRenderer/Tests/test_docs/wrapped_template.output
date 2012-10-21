@@ -1,0 +1,12 @@
+<wrapper>
+  Here is some content that should wrap the wrapped template
+
+  <wrapped_content>
+This Content will be wrapped by a wrapper parent
+
+Here's some more content to be wrapped
+<wrapped_content>
+
+  This should go after the wrapped content
+<wrapper>
+
