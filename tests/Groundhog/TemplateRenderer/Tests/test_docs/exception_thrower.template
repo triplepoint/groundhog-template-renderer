@@ -1,0 +1,14 @@
+<wrapper>
+  Here is some content that should wrap the wrapped template
+
+  <?= $this->data['wrapped_content'] ?>
+
+  This should go after the wrapped content
+<wrapper>
+
+<exception>
+<?php
+    // Here goes the exception
+    throw new Exception('Oh, the huge manatee!');
+?>
+</exception>

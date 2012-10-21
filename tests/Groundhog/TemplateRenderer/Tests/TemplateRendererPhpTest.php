@@ -72,4 +72,28 @@ class TemplateRendererPhpTest extends \PHPUnit_Framework_TestCase
         $this->assertStringEqualsFile($should_render_to, $output);
     }
 
+    public function testRendererBacksOutCleanlyOnException()
+    {
+        $test_file        = 'tests/Groundhog/TemplateRenderer/Tests/test_docs/exception_thrower.template';
+
+        $renderer = new TemplateRendererPhp();
+
+        try {
+            $output = $renderer->render($test_file);
+
+        } catch (\Exception $e) {
+            // The renderer should've dumped the output buffer before throwing the exception
+            $content = ob_get_contents();
+            $this->assertEmpty($content);
+
+            $ob_level = ob_get_level();
+            $this->assertEquals(1, $ob_level);
+
+            return;
+        }
+
+        $this->fail("An Exception should've been thrown and caught during this test");
+
+    }
+
 }
