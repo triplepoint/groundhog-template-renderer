@@ -1,10 +1,6 @@
-<wrapper>
-  Here is some content that should wrap the wrapped template
-
-  <?= $this->data['wrapped_content'] ?>
-
-  This should go after the wrapped content
-<wrapper>
+<content>
+  Here is some content
+</content>
 
 <exception>
 <?php
