@@ -11,5 +11,5 @@ before_script:
 
 script:
     - phpunit -c phpunit.xml --coverage-text tests/
-    - phpcs --ignore=vendor/* --standard=PSR2 -n --encoding=UTF-8 ./
+    - phpcs --ignore=vendor/* --standard=PSR2 -nsp --encoding=UTF-8 ./
     
