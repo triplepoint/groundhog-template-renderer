@@ -95,5 +95,4 @@ class TemplateRendererPhpTest extends \PHPUnit_Framework_TestCase
         $this->fail("An Exception should've been thrown and caught during this test");
 
     }
-
 }
