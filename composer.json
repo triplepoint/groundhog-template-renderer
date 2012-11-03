@@ -45,7 +45,6 @@
     
     "autoload": {
         "psr-0": {
-        	"Groundhog\\TemplateRenderer\\Tests": "tests/",
         	"Groundhog\\TemplateRenderer":        "source/"
     	}
     }
