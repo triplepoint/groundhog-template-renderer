@@ -11,4 +11,4 @@ before_script:
 script:
     - phpunit -c phpunit.xml --coverage-text tests/
     - phpcs --encoding=UTF-8 --extensions=php --standard=./phpcs.xml -nsp ./
-    
+
