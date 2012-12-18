@@ -3,7 +3,7 @@ Partial Parent
 
 Here is the partial content:
 <inserted_content>
-<?= $this->partial('tests/Groundhog/TemplateRenderer/Tests/test_docs/_partial_body.template') ?>
+<?php echo $this->partial('tests/Groundhog/TemplateRenderer/Tests/test_docs/_partial_body.template'); ?>
 </inserted_content>
 
 </partial_parent>

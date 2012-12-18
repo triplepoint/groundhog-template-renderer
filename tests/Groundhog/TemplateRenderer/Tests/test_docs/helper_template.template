@@ -1,7 +1,7 @@
 Some Output
 
-<inserted_content><?= $this->helper['mock_helper']->render() ?></inserted_content>
+<inserted_content><?php echo $this->helper['mock_helper']->render(); ?></inserted_content>
 
-<inserted_content><?= $this->helper['mock_helper']->render() ?></inserted_content>
+<inserted_content><?php echo $this->helper['mock_helper']->render(); ?></inserted_content>
 
 
