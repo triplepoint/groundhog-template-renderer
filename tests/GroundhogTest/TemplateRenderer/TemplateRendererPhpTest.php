@@ -1,6 +1,6 @@
 <?php
 
-namespace Groundhog\TemplateRenderer\Tests;
+namespace GroundhogTest\TemplateRenderer;
 
 use Groundhog\TemplateRenderer\TemplateRendererPhp;
 
@@ -8,8 +8,8 @@ class TemplateRendererPhpTest extends \PHPUnit_Framework_TestCase
 {
     public function testRendererCanLoadSimpleFileAndReturn()
     {
-        $test_file        = 'tests/Groundhog/TemplateRenderer/Tests/test_docs/simple_template.template';
-        $should_render_to = 'tests/Groundhog/TemplateRenderer/Tests/test_docs/simple_template.template';
+        $test_file        = 'tests/GroundhogTest/TemplateRenderer/test_docs/simple_template.template';
+        $should_render_to = 'tests/GroundhogTest/TemplateRenderer/test_docs/simple_template.template';
 
         $renderer = new TemplateRendererPhp();
 
@@ -20,8 +20,8 @@ class TemplateRendererPhpTest extends \PHPUnit_Framework_TestCase
 
     public function testRendererRendersWithData()
     {
-        $test_file        = 'tests/Groundhog/TemplateRenderer/Tests/test_docs/data_template.template';
-        $should_render_to = 'tests/Groundhog/TemplateRenderer/Tests/test_docs/data_template.output';
+        $test_file        = 'tests/GroundhogTest/TemplateRenderer/test_docs/data_template.template';
+        $should_render_to = 'tests/GroundhogTest/TemplateRenderer/test_docs/data_template.output';
 
         $renderer = new TemplateRendererPhp();
 
@@ -32,8 +32,8 @@ class TemplateRendererPhpTest extends \PHPUnit_Framework_TestCase
 
     public function testRendererRendersWithSimplePartial()
     {
-        $test_file        = 'tests/Groundhog/TemplateRenderer/Tests/test_docs/partial_parent.template';
-        $should_render_to = 'tests/Groundhog/TemplateRenderer/Tests/test_docs/partial_parent.output';
+        $test_file        = 'tests/GroundhogTest/TemplateRenderer/test_docs/partial_parent.template';
+        $should_render_to = 'tests/GroundhogTest/TemplateRenderer/test_docs/partial_parent.output';
 
         $renderer = new TemplateRendererPhp();
 
@@ -44,8 +44,8 @@ class TemplateRendererPhpTest extends \PHPUnit_Framework_TestCase
 
     public function testRendererRendersWithWrapper()
     {
-        $test_file        = 'tests/Groundhog/TemplateRenderer/Tests/test_docs/wrapped_template.template';
-        $should_render_to = 'tests/Groundhog/TemplateRenderer/Tests/test_docs/wrapped_template.output';
+        $test_file        = 'tests/GroundhogTest/TemplateRenderer/test_docs/wrapped_template.template';
+        $should_render_to = 'tests/GroundhogTest/TemplateRenderer/test_docs/wrapped_template.output';
 
         $renderer = new TemplateRendererPhp();
 
@@ -56,8 +56,8 @@ class TemplateRendererPhpTest extends \PHPUnit_Framework_TestCase
 
     public function testRendererRendersWithHelper()
     {
-        $test_file        = 'tests/Groundhog/TemplateRenderer/Tests/test_docs/helper_template.template';
-        $should_render_to = 'tests/Groundhog/TemplateRenderer/Tests/test_docs/helper_template.output';
+        $test_file        = 'tests/GroundhogTest/TemplateRenderer/test_docs/helper_template.template';
+        $should_render_to = 'tests/GroundhogTest/TemplateRenderer/test_docs/helper_template.output';
 
         $mock_helper = $this->getMock('\Groundhog\TemplateRenderer\ViewHelperInterface');
         $mock_helper->expects($this->any())
@@ -74,7 +74,7 @@ class TemplateRendererPhpTest extends \PHPUnit_Framework_TestCase
 
     public function testRendererBacksOutCleanlyOnException()
     {
-        $test_file        = 'tests/Groundhog/TemplateRenderer/Tests/test_docs/exception_thrower.template';
+        $test_file        = 'tests/GroundhogTest/TemplateRenderer/test_docs/exception_thrower.template';
 
         $renderer = new TemplateRendererPhp();
 

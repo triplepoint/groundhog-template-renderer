@@ -1,6 +1,6 @@
 <?php
 
-namespace Groundhog\TemplateRenderer\Tests;
+namespace GroundhogTest\TemplateRenderer;
 
 use Groundhog\TemplateRenderer\RequestRootUri;
 
