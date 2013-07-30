@@ -1,7 +1,7 @@
 <?php
 namespace Groundhog\TemplateRenderer;
 
-class TemplateRendererPhp
+class TemplateRendererPhp implements TemplateRendererInterface
 {
     /**
      * Data visible to the view when its rendered
