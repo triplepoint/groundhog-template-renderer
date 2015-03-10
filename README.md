@@ -12,6 +12,3 @@ will necessarily meet your needs out of the box.
 
 So please, feel free to fork this code and adapt it to your own needs - or even better, offer comments on how I could improve the 
 general-purpose nature of the code.  But also accept that at the end of the day, this really is just a starting place for your own work. 
-
-## API Documentation
-Automated API documentation is available at [GitApiDoc](http://gitapidoc.com/api/triplepoint/groundhog-template-renderer/).
